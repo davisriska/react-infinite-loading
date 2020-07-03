@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
@@ -25,16 +25,16 @@ class Infinite extends Component {
   componentDidMount() {
     this.enableScrollWatch(); // 开始绑定
   }
-  componentWillReceiveProps(nextProps) {
-    if(this.props !== nextProps) {
-      if(this.props.loading !== nextProps.loading) {
-        this.setState({loading: nextProps.loading});
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props) {
+      if (prevProps.loading !== this.props.loading) {
+        this.setState({loading: this.props.loading});
       }
-      if(this.props.elementScroll !== nextProps.elementScroll) {
-        this.setState({elementScroll: nextProps.elementScroll});
+      if (prevProps.elementScroll !== this.props.elementScroll) {
+        this.setState({elementScroll: this.props.elementScroll});
       }
-      if(this.props.scrollHeight !== nextProps.scrollHeight) {
-        this.setState({scrollHeight: nextProps.scrollHeight});
+      if (prevProps.scrollHeight !== this.props.scrollHeight) {
+        this.setState({scrollHeight: this.props.scrollHeight});
       }
     }
   }
@@ -128,10 +128,10 @@ class Infinite extends Component {
     return (
       <div className="infinite-loading">
         <ul className="loading">
-          <li className="blue"></li>
-          <li className="green"></li>
-          <li className="yellow"></li>
-          <li className="pink"></li>
+          <li className="blue"/>
+          <li className="green"/>
+          <li className="yellow"/>
+          <li className="pink"/>
         </ul>
       </div>
     )
@@ -160,7 +160,7 @@ Infinite.propTypes = {
   asLoading: PropTypes.node,
   elementScroll: PropTypes.bool,
   scrollHeight: PropTypes.any.isRequired,
-  scrollThreshold: PropTypes.num,
+  scrollThreshold: PropTypes.number,
   handleLoading: PropTypes.func,
   children: PropTypes.node
 };

@@ -23,18 +23,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monsterooo/react-infinite-loading.git"
+    "url": "git+https://github.com/davisriska/react-infinite-loading.git"
   },
   "keywords": [
     "infinite",
     "scrolling"
   ],
-  "author": "monsterooo",
+  "author": "monsterooo, davisriska",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/monsterooo/react-infinite-loading/issues"
+    "url": "https://github.com/davisriska/react-infinite-loading/issues"
   },
-  "homepage": "https://github.com/monsterooo/react-infinite-loading#readme",
+  "homepage": "https://github.com/davisriska/react-infinite-loading#readme",
   "dependencies": {
     "prop-types": "^15.6.0"
   },

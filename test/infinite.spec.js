@@ -1,7 +1,6 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import { expect } from 'chai';
-import sinon from 'sinon';
 import Adapter from 'enzyme-adapter-react-16';
 import Infinite from '../src';
 import Base from './Base';
